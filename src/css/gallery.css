@@ -1,0 +1,33 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  max-width: 1128px;
+  gap: 24px;
+}
+
+.gallery-image {
+  display: block;
+  width: 360px;
+  height: 200px;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gallery-image:hover {
+  cursor: url('../handup-icon.svg') 16 16, pointer;
+  max-width: 376px;
+  max-height: 208px;
+  transform: scale(1.045);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}

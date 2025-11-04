@@ -34,7 +34,7 @@ function onFormSubmit(event) {
   event.preventDefault();
 
   const email = form.elements.email.value.trim();
-  const message = form.elements.message.trim();
+  const message = form.elements.value.message.trim();
 
   if (!email || !message) {
     alert('Please fill in all blanks');
